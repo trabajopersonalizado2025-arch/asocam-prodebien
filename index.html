@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASOCAM PRODEBIEN</title>
+  <style>
+    :root {
+      --verde-principal: #2f6b3c;
+      --verde-claro: #e6f2ea;
+      --verde-oscuro: #1f4d2e;
+      --cafe-tierra: #7a5a3a;
+      --azul-rio: #3a6fa5;
+      --amarillo-vivo: #f2c94c;
+      --naranja-vivo: #f2994a;
+      --fondo-claro: #f4faf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #f4faf6, #ffffff);
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--verde-principal), var(--azul-rio));
+      color: #fff;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background-color: var(--verde-oscuro);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 22px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--amarillo-vivo);
+      color: #000;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1150px;
+      margin: auto;
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section h2 {
+      color: var(--verde-oscuro);
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      border-left: 10px solid var(--naranja-vivo);
+      padding-left: 18px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      margin-bottom: 45px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .value-item {
+      background: linear-gradient(135deg, var(--verde-claro), #ffffff);
+      padding: 28px;
+      border-radius: 18px;
+      font-weight: 600;
+      border-top: 6px solid var(--verde-principal);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      transition: all 0.4s ease;
+    }
+
+    .value-item:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, var(--amarillo-vivo), var(--naranja-vivo));
+      color: #000;
+    }
+
+    .logo {
+      width: 120px;
+      transition: transform 0.6s ease;
+    }
+
+    .logo:hover {
+      transform: rotate(-3deg) scale(1.05);
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--azul-rio), var(--verde-principal));
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-asocam-prodebien.png" alt="Logo ASOCAM PRODEBIEN" class="logo">
+    <div>
+      <h1>ASOCIACIÓN CAMPESINA PROTECCIÓN, DESARROLLO Y BIENESTAR SOCIAL</h1>
+      <p><strong>ASOCAM PRODEBIEN</strong> – Promoviendo el desarrollo rural, la economía campesina y el bienestar social.</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#quienes">¿Quiénes somos?</a>
+    <a href="#objetivo">Objetivo General</a>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#valores">Valores</a>
+  </nav>
+
+  <section id="quienes">
+    <h2>¿Quiénes somos?</h2>
+    <div class="card">
+      <p>La <strong>Asociación Campesina Protección, Desarrollo y Bienestar Social – ASOCAM PRODEBIEN</strong> es una organización sin ánimo de lucro (ONG) de carácter social, comunitario y productivo, conformada por actores sociales comprometidos con el desarrollo integral del territorio.</p>
+      <p>Trabajamos por el fortalecimiento del sector agropecuario, la economía campesina y el bienestar social de las comunidades rurales y poblaciones en condición de vulnerabilidad, promoviendo la beneficencia, el interés común, la seguridad alimentaria y la justicia social.</p>
+      <p>Impulsamos procesos productivos sostenibles, asistencia técnica, capacitación y gestión de proyectos sociales, culturales, educativos y ambientales, articulando esfuerzos con entidades públicas y privadas.</p>
+    </div>
+  </section>
+
+  <section id="objetivo">
+    <h2>Objetivo General</h2>
+    <div class="card">
+      <p>Promover el desarrollo productivo, económico, social, cultural y ambiental del sector agropecuario y de las comunidades rurales, así como el bienestar integral de poblaciones en condición de vulnerabilidad, mediante proyectos productivos y sociales, asistencia técnica, capacitación y articulación interinstitucional, contribuyendo al desarrollo sostenible del territorio.</p>
+    </div>
+  </section>
+
+  <section id="mision">
+    <h2>Misión</h2>
+    <div class="card">
+      <p>ASOCAM PRODEBIEN tiene como misión contribuir al fortalecimiento de la economía campesina y al desarrollo rural integral, promoviendo procesos productivos sostenibles que generen ingresos dignos, seguridad alimentaria y bienestar para las comunidades. Trabajamos mediante la producción, transformación y comercialización de bienes y servicios agropecuarios, así como a través de la asistencia técnica, la capacitación permanente y la transferencia de conocimientos orientados a las buenas prácticas agropecuarias, la protección del medio ambiente y el uso responsable del territorio.</p>
+      <p>Así mismo, desarrollamos y ejecutamos programas y proyectos sociales, educativos, culturales y comunitarios dirigidos a poblaciones en condición de vulnerabilidad, con un enfoque solidario, participativo, diferencial y de derechos, articulando esfuerzos con entidades públicas, privadas, nacionales e internacionales, para aportar al mejoramiento de la calidad de vida, la inclusión social y el desarrollo sostenible de los territorios rurales.</p>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <div class="card">
+      <p>Para el año 2035, ASOCAM PRODEBIEN será una organización campesina reconocida a nivel regional y nacional por su liderazgo en el desarrollo rural, social y productivo, destacándose por la formulación y ejecución de proyectos integrales que fortalezcan la economía campesina, la soberanía y seguridad alimentaria, la inclusión social y la protección del medio ambiente.</p>
+      <p>La Asociación se consolidará como un referente en la gestión de alianzas estratégicas, la participación comunitaria y la incidencia en políticas públicas, aportando a la construcción de territorios rurales más justos, equitativos, sostenibles y con mayores oportunidades para las generaciones presentes y futuras.</p>
+    </div>
+  </section>
+
+  <section id="valores">
+    <h2>Valores Corporativos</h2>
+    <div class="values">
+      <div class="value-item"><strong>Solidaridad:</strong> Fomentamos el apoyo mutuo y el trabajo colectivo.</div>
+      <div class="value-item"><strong>Compromiso social:</strong> Actuamos con responsabilidad y vocación de servicio.</div>
+      <div class="value-item"><strong>Equidad e inclusión:</strong> Garantizamos respeto y participación para todos.</div>
+      <div class="value-item"><strong>Transparencia:</strong> Gestionamos los recursos con ética y honestidad.</div>
+      <div class="value-item"><strong>Respeto por la vida y el territorio:</strong> Protegemos el medio ambiente y la identidad campesina.</div>
+      <div class="value-item"><strong>Participación comunitaria:</strong> Impulsamos el liderazgo social.</div>
+      <div class="value-item"><strong>Innovación y sostenibilidad:</strong> Promovemos prácticas productivas responsables.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>ASOCAM PRODEBIEN</strong></p>
+    <p>Asociación Campesina Protección, Desarrollo y Bienestar Social</p>
+    <p>&copy; 2025 – Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
